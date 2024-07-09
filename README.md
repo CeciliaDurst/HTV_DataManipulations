@@ -1,6 +1,8 @@
 # HTV_DataManipulations README
 
 This repository contains code files for data cleaning and analysis related to Happy Teacher Study.
+**ADJUST PATHS IN SCRIPTS**
+
 
 Preliminary documentation (work in progress): https://docs.google.com/document/d/1BB6k-0zNwT7P7-6zY3-PADZHw_7UPci7GkWkgi--fG8/edit?usp=sharing
 
@@ -65,3 +67,46 @@ Preliminary documentation (work in progress): https://docs.google.com/document/d
 - **Purpose:** Generate average and standard deviations of first and last consecutive 5-day spans with inclusion of number of days statistics related to study.
 - **Usage:**
   - Use clean and filtered threshold datasets.
+
+## Sleep Latency Scripts
+
+### 1. sleepLatency.py
+
+- **Purpose:** Identify available sleep latency per day for each participant as well as the first wake time before light sleep and last wake time before light sleep as well.
+- **Usage:**
+  - Use clean 30 second sleep stage datasets.
+ 
+### 2. sleepLatency(text).py
+
+- **Purpose:** Optional tool to test sleep latency and visually see them in CLI.
+- **Usage:**
+  - Use clean 30 second sleep stage datasets.
+
+## Additional Scripts (Optional)
+
+### 1. FullMeanImputer.py
+
+- **Purpose:** Impute missing values in each column with the overall mean of the participant.
+- **Usage:**
+  - Use clean dataset and if missing values are 0, adjust to warrant that.
+ 
+### 2. adjust.py
+- **Purpose:** Optional tool to adjust values in dataset so the earliest non-empty value is day 1.
+- **Usage:**
+  - Make sure empty values are empty cells (not 0) and use clean formatted dataset
+
+### 3. remove50percent.py
+- **Purpose:** Optional tool to remove participant columns that have less than half (35) days of viable data
+- **Usage:**
+  - Make sure empty values are empty cells (not 0) and use clean formatted dataset
+
+ ### 4. removeLateJoiners.py
+- **Purpose:** Optional tool to remove late joiners manually
+- **Usage:**
+  - Use clean datasets and manually input participant IDs considered late joiners
+
+### 5. testKNNfinal.py
+- **Purpose:** Optional tool to perform KNN imputation on datasets
+- **Usage:**
+  - Make sure empty values are empty cells (not 0) and use clean formatted dataset, manually decide how many neighbors and adjust that accordingly
+  
