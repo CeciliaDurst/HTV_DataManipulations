@@ -14,7 +14,7 @@ Preliminary documentation (work in progress): https://docs.google.com/document/d
 
 ## Data Cleaning Scripts
 
-### 1. Data_Cleaning_v03_RC(1).ipynb
+### 1. Data_Cleaning_v03_RC.ipynb
 
 - **Purpose:** Designed to turn raw files into usable clean datasets.
 - **Usage:**
