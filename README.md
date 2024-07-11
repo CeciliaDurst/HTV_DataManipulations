@@ -9,6 +9,8 @@ This repository contains code files for data cleaning and analysis related to Ha
 **ADJUST PATHS IN SCRIPTS**
 
 
+General Walkthrough Playlist to run scripts:
+https://www.youtube.com/playlist?list=PLM6sIbVR7qldtmO_ss0t6C5ZWh6Bfy0QL
 
 Preliminary documentation (work in progress): https://docs.google.com/document/d/1BB6k-0zNwT7P7-6zY3-PADZHw_7UPci7GkWkgi--fG8/edit?usp=sharing
 
