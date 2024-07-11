@@ -76,18 +76,26 @@ Preliminary documentation (work in progress): https://docs.google.com/document/d
 
 ## Sleep Latency Scripts
 
-### 1. sleepLatency.py
+### 1. deleteCols.py
+
+- **Purpose:** Simple script to delete unused variables in 30 second sleep stage datasets.
+- **Usage:**
+  - Use fitabase 30 second sleep stage datasets.
+
+### 2. sleepLatency.py
 
 - **Purpose:** Identify available sleep latency per day for each participant as well as the first wake time before light sleep and last wake time before light sleep as well.
 - **Usage:**
-  - Use clean 30 second sleep stage datasets.
+  - Use 30 second sleep stage datasets (after runnning deleteCols.py).
  
-### 2. sleepLatency(text).py
+### 3. sleepLatency(text).py
 
 - **Purpose:** Optional tool to test sleep latency and visually see them in CLI.
 - **Usage:**
-  - Use clean 30 second sleep stage datasets.
+  - Use fitabase 30 second sleep stage datasets (after runnning deleteCols.py).
 
+ 
+  
 ## Additional Scripts (Optional)
 
 ### 1. FullMeanImputer.py
